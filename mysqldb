@@ -1,0 +1,15 @@
+CREATE DATABASE `db` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE TABLE `business` (
+  `businessid` int(11) NOT NULL,
+  `businessname` varchar(100) DEFAULT NULL,
+  `businessaddress` varchar(100) DEFAULT NULL,
+  `businesscity` varchar(100) DEFAULT NULL,
+  `businessstate` varchar(100) DEFAULT NULL,
+  `businesscountry` varchar(45) DEFAULT NULL,
+  `businessphone` varchar(45) DEFAULT NULL,
+  `businesscontact` varchar(45) DEFAULT NULL,
+  `businesscatalog` longtext,
+  `surveyorphone` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`businessid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+SELECT * FROM db.business;
